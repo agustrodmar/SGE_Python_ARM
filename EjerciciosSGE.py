@@ -1,10 +1,7 @@
 
-
 # Función principal del Proyecto. Sustituir el número de ejercicio para ejecutar el ejercicio que se desee comprobar.
 def main():
-    ejercicio5()
-
-
+    ejercicio7(36)
 
 # Dada la siguiente cadena de texto:
 # x = “Buenas Tardes”
@@ -106,4 +103,33 @@ def ejercicio5(a=4, b=9):
     else:
         print("Los números son iguales")
 
+
+# Imprimir los 6 primeros números enteros
+def ejercicio6():
+    for i in range(1, 7):
+        print(i)
+
+
+# Dado un número indicar si es par o impar
+def ejercicio7(numero):
+    if numero % 2 == 0:
+        print(f"{numero} es un número par.")
+    else:
+        print(f"{numero} es un número impar.")
+
+
+# Imprimir los números impares desde el 50 hasta la unidad y calcular su suma
+def ejercicio8():
+    # Variable para la suma
+    suma_impares = 0
+
+    # Imprime los números impares desde 50 hasta 1 y calcular su suma
+    for numero in range(49, 0, -2):
+        print(numero)
+        suma_impares += numero
+
+    # Imprime suma
+    print("La suma de los números impares es:", suma_impares)
+
+# Se ejecuta main
 main()
